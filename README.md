@@ -9,6 +9,18 @@ Housing Regression MLE is an end-to-end machine learning pipeline for predicting
 The codebase is organized into distinct pipelines following the flow:
 `Load → Preprocess → Feature Engineering → Train → Tune → Evaluate → Inference → Batch → Serve`
 
+## Datasets
+US housing dataset with geographic, demographic, and economic features spanning multiple years of market data.
+🔗 [Link to dataset](https://www.kaggle.com/datasets/shengkunwang/housets-dataset)
+🔗 Link to complementary dataset (US metros) [Link complementary to dataset (US metros)](https://simplemaps.com/data/us-metros)
+
+Key columns:
+- Date: Time Series
+- Price: The target feature
+- Other features are independent (will help us make predictions on the target)
+
+To load the data, you can follow the link above, download the dataset and put it inside /data/raw and give it a distinct name (i.e HouseTS_original) or use the code in Kaggle to read the dataset directly with a few lines of code.
+
 ### Core Modules
 
 - **`src/feature_pipeline/`**: Data loading, preprocessing, and feature engineering
